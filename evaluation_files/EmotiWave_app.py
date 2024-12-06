@@ -85,7 +85,7 @@ def process_video(video_path):
     cap.release()
 
 # UI Configuration
-st.set_page_config(page_title="𝓔𝓶𝓸𝓽𝓲𝓦𝓪𝓿𝓮: 𝓡𝓲𝓭𝓮 𝓽𝓱𝓮 𝓣𝓲𝓭𝓮 𝓸𝓯 𝓗𝓾𝓶𝓪𝓷 𝓔𝔁𝓹𝓻𝓮𝓼𝓼𝓲𝓸𝓷𝓼😊", page_icon="😊", layout="wide")
+st.set_page_config(page_title="𝓔𝓶𝓸𝓽𝓲𝓦𝓪𝓿𝓮: 𝓡𝓲𝓭𝓮 𝓽𝓱𝓮 𝓣𝓲𝓭𝓮 𝓸𝓯 𝓗𝓾𝓶𝓪𝓷 𝓔𝓶𝓸𝓽𝓲𝓸𝓷𝓼😊", page_icon="😊", layout="wide")
 
 # Sidebar with mode selection
 st.sidebar.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\Interface_images\Icon.jpg", width=200)
@@ -99,7 +99,7 @@ option = st.sidebar.radio(
 # Home Mode
 if option == "Home":
     st.markdown(
-        "<h1 style='text-align: center; color: #4CAF50; font-size: 40px;'>𝓔𝓶𝓸𝓽𝓲𝓦𝓪𝓿𝓮: 𝓡𝓲𝓭𝓮 𝓽𝓱𝓮 𝓣𝓲𝓭𝓮 𝓸𝓯 𝓗𝓾𝓶𝓪𝓷 𝓔𝔁𝓹𝓻𝓮𝓼𝓼𝓲𝓸𝓷𝓼😊</h1>", 
+        "<h1 style='text-align: center; color: #4CAF50; font-size: 40px;'>𝓔𝓶𝓸𝓽𝓲𝓦𝓪𝓿𝓮: 𝓡𝓲𝓭𝓮 𝓽𝓱𝓮 𝓣𝓲𝓭𝓮 𝓸𝓯 𝓗𝓾𝓶𝓪𝓷 𝓔𝓶𝓸𝓽𝓲𝓸𝓷𝓼😊</h1>", 
         unsafe_allow_html=True
     )
     st.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\Interface_images\home.jpg", use_column_width=False, width=1500)
