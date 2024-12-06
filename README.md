@@ -1,73 +1,4 @@
-<<<<<<< HEAD
-# ResEmoteNet: Bridging Accuracy and Loss Reduction in Facial Emotion Recognition
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/resemotenet-bridging-accuracy-and-loss/facial-expression-recognition-on-fer2013)](https://paperswithcode.com/sota/facial-expression-recognition-on-fer2013?p=resemotenet-bridging-accuracy-and-loss)
-
-A new network that helps in extracting facial features and predict the emotion labels.
-
-The emotion labels in this project are:
- - Happiness 😀
- - Surprise 😦
- - Anger 😠
- - Sadness ☹️
- - Disgust 🤢
- - Fear 😨
- - Neutral 😐
-
-
-## Table of Content:
-
- - [Installation](#installation)
- - [Usage](#usage)
- - [Checkpoints](#checkpoints)
- - [Results](#results)
- - [License](#license)
-
-
-## Installation
-
-1. Create a Conda environment.
-```bash
-conda create --n "fer"
-conda activate fer
-```
-
-2. Install Python v3.8 using Conda.
-```bash
-conda install python=3.8
-```
-
-3. Clone the repository.
-```bash
-git clone https://github.com/ArnabKumarRoy02/ResEmoteNet.git
-```
-
-4. Install the required libraries.
-```bash
-pip install -r requirement.txt
-```
-
-## Usage
-
-Run the file.
-```bash
-cd train_files
-python ResEmoteNet_train.py
-```
-
-## Checkpoints
-All of the checkpoint models for FER2013 can be found [here](https://drive.google.com/drive/folders/1Daxa6d1-XFxxpg6dyxYl4V-anfiHwtqK?usp=sharing).
-
-## Results
-
- - FER2013:
-   - Testing Accuracy: **79.79%** (SoTA - 76.82%)
-
-
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-=======
 # 
 𝓔𝓶𝓸𝓽𝓲𝓦𝓪𝓿𝓮 : 𝓡𝓲𝓭𝓮 𝓽𝓱𝓮 𝓣𝓲𝓭𝓮 𝓸𝓯 𝓗𝓾𝓶𝓪𝓷 𝓔𝔁𝓹𝓻𝓮𝓼𝓼𝓲𝓸𝓷𝓼😊
 
@@ -220,4 +151,3 @@ FER2013 Dataset: FER2013 Kaggle
 OpenCV Library for efficient image processing
 
 Streamlit for an interactive interface
->>>>>>> 886913494ea0d0dbc178e72b91cc2989d7c0b93f
