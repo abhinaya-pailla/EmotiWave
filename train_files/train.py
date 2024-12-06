@@ -27,14 +27,14 @@ transform = transforms.Compose([
 ])
 
 # Load the dataset
-train_dataset = Four4All(csv_file=r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\data_preprocessing\processed_dataset\labels\train\train_labels.csv",
-                         img_dir=r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\data_preprocessing\processed_dataset\train", transform=transform)
+train_dataset = Four4All(csv_file=r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\data_preprocessing\processed_dataset\labels\train\train_labels.csv",
+                         img_dir=r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\data_preprocessing\processed_dataset\train", transform=transform)
 train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True)
 train_image, train_label = next(iter(train_loader))
 
 
-test_dataset = Four4All(csv_file=r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\data_preprocessing\processed_dataset\labels\test\test_labels.csv", 
-                        img_dir=r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\data_preprocessing\processed_dataset\test", transform=transform)
+test_dataset = Four4All(csv_file=r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\data_preprocessing\processed_dataset\labels\train\test_labels.csv", 
+                        img_dir=r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\data_preprocessing\processed_dataset\test", transform=transform)
 test_loader = DataLoader(test_dataset, batch_size=16, shuffle=False)
 test_image, test_label = next(iter(test_loader))
 

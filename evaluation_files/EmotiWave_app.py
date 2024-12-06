@@ -88,7 +88,7 @@ def process_video(video_path):
 st.set_page_config(page_title="𝓔𝓶𝓸𝓽𝓲𝓦𝓪𝓿𝓮: 𝓡𝓲𝓭𝓮 𝓽𝓱𝓮 𝓣𝓲𝓭𝓮 𝓸𝓯 𝓗𝓾𝓶𝓪𝓷 𝓔𝔁𝓹𝓻𝓮𝓼𝓼𝓲𝓸𝓷𝓼😊", page_icon="😊", layout="wide")
 
 # Sidebar with mode selection
-st.sidebar.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\Interface_images\Icon.jpg", width=200)
+st.sidebar.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\Interface_images\Icon.jpg", width=200)
 st.sidebar.header("Choose Mode")
 option = st.sidebar.radio(
     "",
@@ -102,12 +102,12 @@ if option == "Home":
         "<h1 style='text-align: center; color: #4CAF50; font-size: 40px;'>𝓔𝓶𝓸𝓽𝓲𝓦𝓪𝓿𝓮: 𝓡𝓲𝓭𝓮 𝓽𝓱𝓮 𝓣𝓲𝓭𝓮 𝓸𝓯 𝓗𝓾𝓶𝓪𝓷 𝓔𝔁𝓹𝓻𝓮𝓼𝓼𝓲𝓸𝓷𝓼😊</h1>", 
         unsafe_allow_html=True
     )
-    st.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\Interface_images\home.jpg", use_column_width=False, width=1500)
+    st.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\Interface_images\home.jpg", use_column_width=False, width=1500)
 
 # Image Upload Mode
 elif option == "Image Upload":
     st.markdown("<h3 style='text-align: center;color: #007ACC;'>𝑰𝒎𝒂𝒈𝒆 𝑬𝒎𝒐𝒕𝒊𝒐𝒏 𝑫𝒆𝒕𝒆𝒄𝒕𝒊𝒐𝒏</h3>", unsafe_allow_html=True)
-    st.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\Interface_images\image.jpg", use_column_width=False, width=1600)
+    st.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\Interface_images\image.jpg", use_column_width=False, width=1600)
     uploaded_file = st.file_uploader("Choose an Image", type=["png", "jpg", "jpeg"])
     if uploaded_file is not None:
         image = Image.open(uploaded_file).convert("RGB")
@@ -118,7 +118,7 @@ elif option == "Image Upload":
 # Video Upload Mode
 elif option == "Video Upload":
     st.markdown("<h3 style='text-align: center;color: #007ACC;'>𝑽𝒊𝒅𝒆𝒐 𝑬𝒎𝒐𝒕𝒊𝒐𝒏 𝑫𝒆𝒕𝒆𝒄𝒕𝒊𝒐𝒏</h3>", unsafe_allow_html=True)
-    st.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\Interface_images\video.jpg", use_column_width=False, width=1600)
+    st.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\Interface_images\video.jpg", use_column_width=False, width=1600)
     uploaded_file = st.file_uploader("Choose a Video", type=["mp4", "avi"])
     if uploaded_file is not None:
         temp_file_path = f"temp_video.{uploaded_file.name.split('.')[-1]}"
@@ -129,7 +129,7 @@ elif option == "Video Upload":
 # Real-Time Webcam Mode
 elif option == "Real-Time Webcam":
     st.markdown("<h3 style='text-align: center;color: #007ACC;'>𝑹𝒆𝒂𝒍-𝑻𝒊𝒎𝒆 𝑬𝒎𝒐𝒕𝒊𝒐𝒏 𝑫𝒆𝒕𝒆𝒄𝒕𝒊𝒐𝒏</h3>", unsafe_allow_html=True)
-    st.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\Interface_images\webcam.jpg", use_column_width=False, width=1600)
+    st.image(r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\Interface_images\webcam.jpg", use_column_width=False, width=1600)
     start_webcam = st.button("Start Webcam")
     stop_webcam = st.button("Stop")
 

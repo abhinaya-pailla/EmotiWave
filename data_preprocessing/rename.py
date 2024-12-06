@@ -2,10 +2,10 @@ import os
 import shutil
 
 # Define the source directory
-source_dir = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\data"
+source_dir = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\data"
 
 # Define the destination directory
-destination_dir = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\data_preprocessing\processed_dataset"
+destination_dir = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\data_preprocessing\processed_dataset"
 # Mapping for folder names
 folder_mapping = {'test': 'test', 
                   'train': 'train'}

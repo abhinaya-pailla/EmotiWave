@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-path = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\data_preprocessing\processed_dataset\train"
+path = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\data_preprocessing\processed_dataset\train"
 
 label_mapping = {
     "happy": 0,
@@ -25,7 +25,7 @@ for filename in os.listdir(path):
 
 df = pd.DataFrame(image_data, columns=["ImageName", "Label"])
 
-csv_file_path = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\data_preprocessing\processed_dataset\labels\train\train_labels.csv"
+csv_file_path = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\data_preprocessing\processed_dataset\labels\train\train_labels.csv"
 
 df.to_csv(csv_file_path, index=False, header=False)
 

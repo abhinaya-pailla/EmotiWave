@@ -10,9 +10,8 @@ def move_images(source_folder, destination_folder):
                 shutil.move(source_path, destination_path)
 
 # Replace 'test_folder' with the path to your data folder
-test_folder = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\data"
+test_folder = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\data"
 
 # Replace 'destination_folder' with the path to your destination folder
-destination_folder = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\data_preprocessing\processed_dataset"
-
+destination_folder = r"C:\Users\paill\Coding\Projects_for_resume\Emotion_Detection\EmotiWave\data_preprocessing\processed_dataset"
 move_images(test_folder, destination_folder)
